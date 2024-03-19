@@ -1,0 +1,40 @@
+$primary:              #5F9CD0;
+$primary-dark:         #3983C3;
+$primary-border:       darken($primary, 5%);
+$primary-border-dark:  darken($primary-border, 10%);
+
+$green:                #319F00;
+$green-dark:           darken($green, 5%);
+$red:                  #C70000;
+$red-dark:             darken($red, 5%);
+$grey:                 #CECECE;
+$grey-dark:            #6A6A6A;
+$grey-light:           #A9A9A9;
+
+$background:           #EDEDED;
+$background-light:     rgba(237, 237, 237, 0.4);
+
+$text:                 #333333;
+$white:                #FFFFFF;
+$black:                #000000;
+$danger:                 $red;
+
+$font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-color: $text;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+// inputs
+$input-btn-padding-x: 11px;
+$input-btn-padding-y: 7px;
+
+// cards
+$card-cap-color: $white;
+$card-cap-bg: $grey-dark;

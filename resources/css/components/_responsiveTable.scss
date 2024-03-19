@@ -1,0 +1,40 @@
+.table.table-responsive {
+    td {
+        border: none;
+        background-color: transparent !important;
+    }
+
+    .btn-toggle {
+        border: none;
+        background-color: transparent;
+    
+        &:hover {
+            color: $primary;
+        }
+        &[aria-expanded="true"] {
+            .icon-opened {
+                display: inline !important;
+            }
+            .icon-closed {
+                display: none;
+            }
+        }
+    
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    tbody {
+        border-bottom: 1px solid $border-color;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+            background-color: $background-light;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.form-control, .multiselect__tags {
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 1px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset;
+
+    &:focus {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.sub-controls {
+    padding: 1rem;
+    border: 1px solid rgb(204,204,204);
+    &.is-invalid {
+        border-color: var(--bs-form-invalid-border-color);
+    }
+}
+
+label {
+    margin-right: 5px;
+}
+
+.form-check-input.green {
+    height: 16px;
+    width: 16px;
+    margin-top: 0;
+    &:checked {
+        background-color: $green;
+        border-color: $green;
+    }
+    &:hover:not(:checked) {
+        background-color: $green-200;
+        border-color: $green;
+    }
+}
+
+/** MULTISELECT MODULE **/
+.multiselect__tag {
+    background-color: #e2e2e2 !important;
+    color: black !important;
+}
+
+.multiselect__option--selected::after {
+    content: 'x' !important;
+}
+
+.multiselect__option--highlight {
+    background: $primary !important;
+}
+
+.multiselect__option--selected.multiselect__option--highlight {
+    background: grey !important;
+}
+
+.multiselect__option--selected.multiselect__option--highlight::after { 
+    background: grey !important;
+}
+
+.multiselect__tag-icon::after {
+    color: #000 !important;
+}
+
+.multiselect__tag-icon:hover::after {
+    color: $red !important;
+}
+
+.multiselect__input {
+    padding: 0 !important;
+    min-height: 25px !important;
+
+    &::placeholder {
+        color: #adadad !important;
+        font-size: 14px;
+    }
+}
+
+.multiselect__placeholder {
+    line-height: 20px !important;
+    padding-top: 3px !important;
+}
+
+.multiselect.is-invalid .multiselect__tags {
+    border-color: $red;
+}

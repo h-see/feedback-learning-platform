@@ -1,0 +1,116 @@
+@import 'variables.scss';
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/mixins';
+@import 'components/button.scss';
+@import 'components/inputs.scss';
+@import 'components/card.scss';
+@import 'components/responsiveTable.scss';
+
+@import 'views/auth.scss';
+@import 'views/dashboard.scss';
+
+
+html, body {
+    background-color: $background;
+    font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: none;
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 2200px;
+    }
+}
+
+.navbar {
+    border-bottom: 1px solid $grey;
+}
+
+.breadcrumb {
+    background-color: #EDEDED;
+    box-shadow: 0 0.25rem .5rem rgba(0, 0, 0, 0.1);
+}
+
+ol.breadcrumb{
+    padding: 0 40px;
+}
+
+a.breadcrumb-item.active{
+    color: $primary;
+    text-decoration: none !important;
+}
+
+.empty-msg {
+    color: black !important;
+    text-align: center;
+    padding: 30px 0 !important;
+    border-bottom: none !important;
+}
+
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    padding: 1rem 3rem;
+}
+
+#success-alert, #error-alert {
+    display: none;
+}
+
+.btn-160 {
+    width: 160px;
+}
+
+.btn-100 {
+    width: 100px;
+}
+
+.text-grey-dark {
+    color: $grey-dark;
+}
+
+.card-header svg {
+    margin-right: 5px;
+}
+
+thead {
+    border-bottom-width: 2px !important;
+}
+
+td {
+    vertical-align: middle;
+}
+
+td:first-of-type, th:first-of-type {
+    padding-left: 1rem;
+}
+td:last-of-type, th:first-of-type {
+    padding-right: 1rem;
+}
+
+.cell-btn {
+    text-align: end;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+

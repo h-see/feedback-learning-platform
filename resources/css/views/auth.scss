@@ -1,0 +1,17 @@
+.auth-form {
+    &.btn-forgotten {
+        padding: 0;
+    }
+
+    .btn {
+        font-size: 1.143em;
+        font-weight: bold;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .form-control {
+        font-size: 1.143em;
+        padding: 11px 10px;
+    }
+}

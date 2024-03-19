@@ -1,0 +1,102 @@
+.btn-primary {
+    border: 1px solid $primary-border;
+    color: $white;
+
+        &:hover,
+        &:active,
+        &.btn:first-child:active {
+            background-color: $primary-dark;
+            border-color: $primary-border-dark;
+            color: $white;
+        }
+
+        &:hover:active {
+            background-color: darken($color: $primary, $amount: 15%) !important;
+            border-color: darken($color: $primary-border, $amount: 15%) !important;
+        }
+
+        &:disabled {
+            background-color: #A9A9A9 !important;
+            color: white !important;
+            border-color: $grey-dark !important;
+        }
+}
+
+.btn-secondary {
+    background-color: $white;
+    border: 1px solid $grey;
+    color: $text;
+
+    &:hover,
+    &:active,
+    &.btn:first-child:active {
+        background-color: $white;
+        border-color: $grey-dark;
+        color: $text;
+    }
+
+    &:hover:active {
+        border-color: darken($color: $grey-dark, $amount: 5%) !important;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    }
+
+    &:disabled {
+        background-color: $white !important;
+        color: $grey !important;
+        border-color: $grey !important;
+    }
+
+}
+
+.btn-danger {
+    border: 1px solid $red;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &.btn:first-child:active {
+        background-color: $red-dark;
+        border-color: $red-dark;
+        color: $white;
+    }
+
+    &:hover:active {
+        background-color: darken($color: $red, $amount: 15%) !important;
+        border-color: darken($color: $red, $amount: 15%) !important;
+    }
+
+    &:disabled {
+        background-color: #A9A9A9 !important;
+        color: white !important;
+        border-color: $grey-dark !important;
+    }
+}
+
+.btn-link {
+    color: $primary;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &.btn:first-child:active {
+        color: $primary-dark;
+    }
+}
+
+.btn {
+    margin: 2px;
+
+    &--full-width {
+        width: 100%;
+    }
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
+}
